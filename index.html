@@ -4,7 +4,7 @@
 <head>
     <title>Home Page</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link href="https://db.onlinewebfonts.com/c/1d5653f71ff06975c95d982894fb7eb8?family=ITC+Zapf+Dingbats"
         rel="stylesheet" type="text/css" />
@@ -20,14 +20,14 @@
 
 </head>
 
-<body class="body p-0 m-0">
+<body class="body ">
 
-    <div class="container-sm-fullwidth" style="background-color: rgb(4, 31, 68);" >
+    <div class="container-sm-fullwidth p-0 m-0"  data-aos="fade-down">
         <!--Navigation bar-->
-        <nav class="navbar navbar-expand-sm navbar-light ">
+        <nav class="navbar navbar-expand-sm navbar-light " >
             <!--follow us in the top right corner-->
-            <div class="container-sm-fullwidth p-3"
-                style="display:inline-block;position:absolute;top:0%;right:0%;width:fit-content;height:fit-content">
+            <div class="container-sm-fullwidth p-2"
+                style="display:inline-block;position:absolute;top:0%;right:5%;width:fit-content;height:fit-content">
                 <h10 style="color:#ffffff">follow us @</h10>
                 <a href="#" style="color:#0077b5"><i data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="LinkedIn" class="fa-brands fa-linkedin"></i></a>
@@ -42,16 +42,17 @@
 
 
             <!--logo-->
-            <span class="navbar-brand p-3"><img class="img-fluid" width="100" height="100"
+            <div class="container-sm-fullwidth p-3">
+            <span class="navbar-brand p-2"><img class="img-fluid" width="100" height="100"
                     src="aarma_blue_logo.png" alt="logo">
 
-            </span>
+            </span></div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+                <ul class="navbar-nav p-2">
                     <li class="nav-item">
                         <a id="nav_text" class="nav-link " href="#about_us">About us</a>
                     </li>
@@ -73,36 +74,11 @@
 
         </nav>
     </div>
-    <!--scroll to top button-->
-
-    <div class="container-sm-fullwidth" style="background-color:rgb(230,237,253);width: 100%;margin: 0;"><button
-            id="scroll-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up" style="color:black"
-                aria-hidden="true"></i></button><br>
-    </div>
-
-    <script>
-        // Show the scroll-to-top button when scrolling down
-        window.addEventListener('scroll', scrollFunction);
-
-        function scrollFunction() {
-            var scrollButton = document.getElementById("scroll-to-top");
-            if (window.pageYOffset > 20) {
-                scrollButton.style.display = "block";
-            } else {
-                scrollButton.style.display = "none";
-            }
-        }
-
-        // Scroll to top when the button is clicked
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-
+    
 
 
     <!--About Us-->
-    <div id="about_us" class="row" style="background-color:rgb(230,237,253);padding-top: 5%;padding-bottom: 10%;">
+    <div data-aos="flip-up" id="about_us" class="row m-0" style="background-color:rgb(230,237,253);padding: 1.5%;padding-bottom: 10%;">
 
 
         <div class="col-sm-6" >
@@ -122,7 +98,7 @@
             </p>
 
         </div><br>
-        <div class="col-sm-6"  style="background-color:rgb(230,237,253);">
+        <div data-aos="flip-down" class="col-sm-6"  style="background-color:rgb(230,237,253);">
             <img class="img-fluid" style="align-content: center;mix-blend-mode: multiply;"
                 src="about_us_aarma.jpg" alt="About us picture">
         </div>
@@ -131,7 +107,7 @@
 
 
     <!--Our Mission-->
-    <div id="our_mission" class="row" style="background-color:rgb(255, 255, 255);padding-top: 5%;padding-bottom:5%">
+    <div id="our_mission" data-aos="zoom-in" class="row" style="background-color:rgb(255, 255, 255);padding: 1.5%;padding-bottom:5%;width:100">
         <div class="col-sm-6" >
             <br>
             <h1>
@@ -148,7 +124,7 @@
             </p>
         </div><br>
 
-        <div class="col-sm-6 p-0 m-0" 
+        <div data-aos="zoom-in" class="col-sm-6 p-0 m-0" 
             style="background-color:rgb(255, 255, 255)">
             <img class="img-fluid" src="vision_new.jpg" style="mix-blend-mode: multiply;" width="100%"
                 height="70%" alt="Our mission picture">
@@ -159,8 +135,7 @@
 
     </div>
     <!--Our Services-->
-    <div id="our_services" class="row" style="padding-bottom: 5%;background-color: rgb(4,31,68);" data-aos="slide-left"
-        data-aos-delay="50" data-aos-easing="ease-in-out">
+    <div data-aos="zoom-in" id="our_services" class="row m-0" style="padding-bottom: 5%;background-color: rgb(4,31,68);width: 100;" >
         <br><br>
 
         <h1 style="padding:5%;color:rgb(252,203,0);text-align: center">
@@ -210,49 +185,49 @@
         data-aos-delay="70">
         <h1 style="padding: 5%;padding-bottom:2%;text-align: center;"><b>Co-founders</b></h1>
         <div class="row p-1 m-1 ">
-            <div class="col-lg-3 col-md-6 col-sm-12 p-4" style="text-align: center; border-radius: 25px;">
+            <div id="card" class="col-lg-3 col-md-6 col-sm-12 " style=" border-radius: 25px;">
                 <!-- Content for Tousif -->
                 <div data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out" class="card "
                     style="width: 18rem;background-color:rgb(255, 255, 255); border-radius: 25px;">
                     <img src="tousif.jpeg" class="card-img-top" alt="Tousif" height="50%"
                         style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);">
+                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
                         <h3 id="card_title" class="card-title"><b>Tousif Ahamed Mohammed </b></h3>
                         <h5 id="card_details" class="card-title"><b>Managing Director & C.E.O </b></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6  col-sm-12 p-4" style="text-align: center; border-radius: 25px;">
+            <div id="card" class="col-lg-3 col-md-6  col-sm-12 " style=" border-radius: 25px;">
                 <!-- Content for Venu -->
                 <div data-aos="flip-right" data-aos-delay="120" data-aos-easing="ease-in-out" class="card "
                     style="width: 18rem;background-color:rgb(255, 255, 255); border-radius: 25px;">
                     <img src="Venu.jpg" class="card-img-top" alt="Venu" height="50%"
                         style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);">
+                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
                         <h3 id="card_title" class="card-title"><b>Venu Gopal Achhe</b> </b></h3>
                         <h5 id="card_details" class="card-title"><b>Technical Director & C.T.O </b></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12   p-4" style="text-align: center; border-radius: 25px;">
+            <div id="card" class="col-lg-3 col-md-6 col-sm-12   " style=" border-radius: 25px;">
                 <!-- Content for Sravani -->
                 <div data-aos="flip-right" data-aos-delay="140" data-aos-easing="ease-in-out" class="card "
                     style="width: 18rem;background-color:rgb(255, 255, 255); border-radius: 25px;">
                     <img src="sravani.jpg" class="card-img-top" alt="Sravani"
                         style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);">
+                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
                         <h3 id="card_title" class="card-title"><b>Sravani Kristhipati </b></h3>
                         <h5 id="card_details" class="card-title"><b>Marketing Director & C.M.O </b></h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12  p-4" style="text-align: center; border-radius: 25px;">
+            <div id="card" class="col-lg-3 col-md-6 col-sm-12" style=" border-radius: 25px;">
                 <!-- Content for Phani -->
                 <div data-aos="flip-right" data-aos-delay="160" data-aos-easing="ease-in-out" class="card "
                     style="width: 18rem;background-color:rgb(255, 255, 255); border-radius: 25px;">
                     <img src="..." class="card-img-top" alt="Phani" height="50%"
                         style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);">
+                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
                         <h3 id="card_title" class="card-title"><b>Phani Kumar Sesham</b></h3>
                         <h5 id="card_details" class="card-title"><b>Operations Director & C.O.O </b></h5>
                     </div>
@@ -260,10 +235,36 @@
             </div>
         </div>
     </div>
+    <!--scroll to top button-->
+
+    <div class="container-sm-fullwidth" style="width: 100;margin: 0;"><button
+        id="scroll-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up" style="color:black"
+            aria-hidden="true"></i></button><br>
+</div>
+
+<script>
+    // Show the scroll-to-top button when scrolling down
+    window.addEventListener('scroll', scrollFunction);
+
+    function scrollFunction() {
+        var scrollButton = document.getElementById("scroll-to-top");
+        if (window.pageYOffset > 20) {
+            scrollButton.style.display = "block";
+        } else {
+            scrollButton.style.display = "none";
+        }
+    }
+
+    // Scroll to top when the button is clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
 
     <!--Contact us-->
     <div data-aos="fade-up" data-aos-delay="20" id="contact_us" class="container-sm-fullwidth"
-        style="text-align: center; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
+        style="text-align: center; width: 100; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
         <h1 style=" padding:5%"><b>Contact us</b></h1>
         <div data-aos="flip-left" data-aos-delay="100" class="col-12"
             style="background-color:rgb(230,237,253);border-radius:25px;padding-top: 5%;padding-bottom: 5%;padding-left: 10%;padding-right: 10%;">
@@ -291,7 +292,7 @@
                     <option class="op" value="Other">Other</option>
                 </select><br><br>
                 <textarea id="Subject" name="Subject" class="form" rows="4" maxlength="100"
-                    placeholder="Please elaborate the reason for enquiry in 100 words " style="width: 85%;"
+                    placeholder="Please elaborate the reason for enquiry in 100 words " 
                     required></textarea><br>
                 <span id="wordCount">0/100 words</span>
                 <br><br>
@@ -434,7 +435,7 @@
 
 
                             <!-- Linkedin -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
+                            <a  class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
                                 target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
                                     data-bs-placement="bottom" title="LinkedIn" class="fab fa-linkedin-in"></i></a>
                             <!-- Instagram -->
