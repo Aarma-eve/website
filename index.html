@@ -269,6 +269,15 @@
                     <input id="Email" name="Email" class="form" type="email" placeholder="Example@domain.com"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
                         required><br><br>
+                        <label for="Language"><i class="fas fa-language"> :</i></label>
+                    <select id="Language" name="Language" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">Please select your preferred language.
+                        </option>
+                        <option class="op" value="English">English </option>
+                        <option class="op" value="Telugu">తెలుగు </option>
+                        <option class="op" value="Hindi">हिंदी </option>
+                        
+                    </select><br><br>
 
                     <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
                     <select id="Category" name="Category" class="form">
@@ -326,12 +335,13 @@
                         var name = document.getElementById('Name').value;
                         var occupation = document.getElementById('Occupation').value;
                         var email = document.getElementById('Email').value;
+                        var lang = document.getElementById('Language').value;
                         var category = document.getElementById('Category').value;
                         var subject = document.getElementById('Subject').value;
                         // Retrieve more field values as needed
 
                         // Perform form validation
-                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || lang.trim() === '' || category.trim() === '' || subject.trim() === '') {
                             alert('Please fill out all the required fields.');
                             return; // Stop further execution
                         }
@@ -723,6 +733,15 @@
                     <input id="Email_t" name="Email" class="form" type="email" placeholder="Example@domain.com"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
                         required><br><br>
+                        <label for="Language"><i class="fas fa-language"> :</i></label>
+                    <select id="Language_t" name="Language" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">దయచేసి మీరు ఇష్టపడే భాషను ఎంచుకోండి.
+                        </option>
+                        <option class="op" value="English">English </option>
+                        <option class="op" value="Telugu">తెలుగు </option>
+                        <option class="op" value="Hindi">हिंदी </option>
+                        
+                    </select><br><br>
 
                     <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
                     <select id="Category_t" name="Category" class="form">
@@ -782,12 +801,13 @@
                         var name = document.getElementById('Name_t').value;
                         var occupation = document.getElementById('Occupation_t').value;
                         var email = document.getElementById('Email_t').value;
+                        var lang = document.getElementById('Language_t').value;
                         var category = document.getElementById('Category_t').value;
                         var subject = document.getElementById('Subject_t').value;
                         // Retrieve more field values as needed
 
                         // Perform form validation
-                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || lang.trim() === '' || category.trim() === '' || subject.trim() === '') {
                             alert('దయచేసి అవసరమైన అన్ని ఫీల్డ్‌లను పూరించండి.');
                             return; // Stop further execution
                         }
@@ -1174,6 +1194,16 @@
                     <input id="Email_h" name="Email" class="form" type="email" placeholder="Example@domain.com"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
                         required><br><br>
+                        <label for="Language"><i class="fas fa-language"> :</i></label>
+                    <select id="Language_h" name="Language" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">कृपया अपनी पसंदीदा भाषा चुनें.
+                        </option>
+                        <option class="op" value="English">English </option>
+                        <option class="op" value="Telugu">తెలుగు </option>
+                        <option class="op" value="Hindi">हिंदी </option>
+                        
+                    </select><br><br>
+
 
                     <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
                     <select id="Category_h" name="Category" class="form">
@@ -1207,12 +1237,13 @@
                         var name = document.getElementById('Name_h').value;
                         var occupation = document.getElementById('Occupation_h').value;
                         var email = document.getElementById('Email_h').value;
+                        var lang = document.getElementById('Language_h').value;
                         var category = document.getElementById('Category_h').value;
                         var subject = document.getElementById('Subject_h').value;
                         // Retrieve more field values as needed
 
                         // Perform form validation
-                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || lang.trim() === '' || category.trim() === '' || subject.trim() === '') {
                             alert('कृपया सभी आवश्यक फ़ील्ड भरें.');
                             return; // Stop further execution
                         }
