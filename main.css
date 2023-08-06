@@ -3,13 +3,14 @@
 
   font-family: "Trirong", serif;
   font-size: 1.8vw;
-  color: rgb(0, 0, 0);
+  color: rgb(56, 56, 56);
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
   box-sizing: border-box;
   word-wrap: break-word;
   width: 100vw;
+
 
 }
 
@@ -56,6 +57,7 @@
 
 h1,
 h2 {
+  
   color: rgb(4, 31, 68);
   padding-left: 5%;
 }
@@ -90,7 +92,10 @@ h2 {
 
 .p {
   color: rgb(0, 0, 0);
-  padding-left: 5%
+  padding-left: 5%;
+  text-align: justify;
+  
+  hyphens: auto;
 }
 
 img {
@@ -123,6 +128,14 @@ nav {
 
 
 }
+
+
+.navbar li {
+  
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust the spacing between the links */
+}
+
 
 
 

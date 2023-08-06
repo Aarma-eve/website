@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
+    <title id="title">హోమ్ పేజీ</title>
+    <link rel="icon" type="image/x-icon" href="aarma_blue_logo.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
@@ -22,22 +24,24 @@
 
 <body class="body ">
 
-    <div class="container-sm-fullwidth p-0 m-0" data-aos="fade-down">
+
+
+    <div id="english" style="display: none;" class="container-sm-fullwidth p-0 m-0" data-aos="fade-down">
         <!--Navigation bar-->
         <nav class="navbar navbar-expand-sm navbar-light ">
             <!--follow us in the top right corner-->
             <div class="container-sm-fullwidth p-2"
                 style="display:inline-block;position:absolute;top:0%;right:5%;width:fit-content;height:fit-content">
-                <h10 style="color:#ffffff">follow us @</h10>
-                <a href="#" style="color:#0077b5"><i data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="LinkedIn" class="fa-brands fa-linkedin"></i></a>
-                <a href="#" style="color: #E4405F"><i data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Instagram" class="fa-brands fa-instagram"></i></a>
-                <a href="#" style="color:#3b5998"><i data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Facebook" class="fa-brands fa-facebook"></i></a>
-                <a href="#" style="color:#00acee"><i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"
-                        class="fa-brands fa-twitter"></i></a>
-
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" onclick="h_lang()">हिंदी</a></li>
+                        <li><a class="dropdown-item" onclick="t_lang()">తెలుగు</a></li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -58,13 +62,13 @@
                         <a id="nav_text" class="nav-link " href="#about_us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav_text" class="nav-link " href="#our_mission">Our Mission</a>
+                        <a id="nav_text" class="nav-link " href="#mission">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav_text" class="nav-link " href="#our_services">Our Services</a>
+                        <a id="nav_text" class="nav-link " href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav_text" class="nav-link" href="#co-founders">Co-founders</a>
+                        <a id="nav_text" class="nav-link" href="#team">Team</a>
                     </li>
 
                     <li class="nav-item">
@@ -74,175 +78,1280 @@
             </div>
 
         </nav>
-    </div>
-
-
-
-    <!--About Us-->
-    <div data-aos="flip-up" id="about_us" class="row m-0"
-        style="background-color:rgb(230,237,253);padding: 1.5%;padding-bottom: 10%;">
-
-
-        <div class="col-sm-6">
-            <h1>
-                <b>About us </b>
-            </h1><br>
-            <p class="p">
-                At Aarma, we are your one-stop destination for all your event needs. Whether you're organizing a
-                corporate conference, a wedding, a gala dinner, or a music festival, we've got you covered. With our
-                comprehensive platform, you can easily find everything necessary to conduct the perfect event.
-                <br>
-                With our user-friendly app and website, event planning has never been easier. Enjoy seamless
-                coordination, real-time communication, and instant updates throughout the entire process.
-                <br>
-                Join us today and discover a new level of convenience, efficiency, and excellence in event planning.
-                Let's make your event unforgettable!
-            </p>
-
-        </div><br>
-        <div data-aos="flip-down" class="col-sm-6" style="background-color:rgb(230,237,253);">
-            <img class="img-fluid" style="align-content: center;mix-blend-mode: multiply;" src="about_us_aarma.jpg"
-                alt="About us picture">
-        </div>
-    </div>
-
-
-
-    <!--Our Mission-->
-    <div id="our_mission" data-aos="zoom-in" class="row"
-        style="background-color:rgb(255, 255, 255);padding: 1.5%;padding-bottom:5%;width:100">
-        <div class="col-sm-6">
-            <br>
-            <h1>
-                <b>Our Mission </b>
-            </h1><br>
-            <p style=" padding-left: 5%;">
-                At AARMA, we simplify event organizing while empowering service providers. Our mission is to alleviate
-                customer burdens by streamlining the planning process, providing comprehensive tools and support.
-                Simultaneously, we boost service provider's businesses by connecting them with new opportunities for
-                growth through our digital platform. By revolutionizing the industry, we create a seamless experience
-                for event organizers, ensuring unforgettable events, while fueling success for service providers in the
-                dynamic event market. Join us as we transform the way events are organized and executed.
-                <br>
-            </p>
-        </div><br>
-
-        <div data-aos="zoom-in" class="col-sm-6 p-0 m-0" style="background-color:rgb(255, 255, 255)">
-            <img class="img-fluid" src="vision_new.jpg" style="mix-blend-mode: multiply;" width="100%" height="70%"
-                alt="Our mission picture">
-        </div>
 
 
 
 
-    </div>
-    <!--Our Services-->
-    <div data-aos="zoom-in" id="our_services" class="row m-0"
-        style="padding-bottom: 5%;background-color: rgb(4,31,68);width: 100;">
-        <br><br>
+        <!--About Us-->
+        <div data-aos="flip-up" id="about_us" class="row m-0"
+            style="background-color:rgb(230,237,253);padding: 1.5%;padding-bottom: 10%;">
 
-        <h1 style="padding:5%;color:rgb(252,203,0);text-align: center">
-            <b>Our Services </b>
-        </h1>
-        <!--To customers-->
-        <div class="col-sm-6" data-aos="fade-right" data-aos-delay="75" style="background-color: white;">
-            <h2 style="text-align:center;padding:5%;"><b>To Customers</b></h2>
-            <div class="text-center">
-                <img class="img-fluid" src="customers.jpg" alt="customers_anime" width="50%" height="50%">
+
+            <div class="col-sm-6">
+                <h1>
+                    <b>About us </b>
+                </h1><br>
+                <p class="p">
+                    At Aarma, we are your one-stop destination for all your event needs. Whether you're organizing a
+                    corporate conference, a wedding, a gala dinner, or a music festival, we've got you covered. With our
+                    comprehensive platform, you can easily find everything necessary to conduct the perfect event.
+                    <br>
+                    With our user-friendly app and website, event planning has never been easier. Enjoy seamless
+                    coordination, real-time communication, and instant updates throughout the entire process.
+                    <br>
+                    Join us today and discover a new level of convenience, efficiency, and excellence in event planning.
+                    Let's make your event unforgettable!
+                </p>
+
+            </div><br>
+            <div data-aos="flip-down" class="col-sm-6" style="background-color:rgb(230,237,253);">
+                <img class="img-fluid" style="align-content: center;mix-blend-mode: multiply;" src="about_us_aarma.jpg"
+                    alt="About us picture">
             </div>
-            <div style="text-align:center">
-                <ul class="ul">
-                    <li>Convenient and customized Event Planning</li>
-                    <li>Extensive Vendor Network</li>
-                    <li>Cost effective events</li>
-                    <li>Real-Time Communication</li>
-                    <li>Exceptional Service</li>
-                    <li>To know more <a href="#contact_us">contact us</a></li>
+        </div>
+
+
+
+        <!--Our Mission-->
+        <div id="mission" data-aos="zoom-in" class="row"
+            style="background-color:rgb(255, 255, 255);padding: 1.5%;padding-bottom:5%;width:100">
+            <div class="col-sm-6">
+                <br>
+                <h1>
+                    <b>Mission </b>
+                </h1><br>
+                <p class="p">
+                    At Aarma, we simplify event organizing while empowering service providers. Our mission is to
+                    alleviate
+                    customer burdens by streamlining the planning process, providing comprehensive tools and support.
+                    Simultaneously, we boost service provider's businesses by connecting them with new opportunities for
+                    growth through our digital platform. By revolutionizing the industry, we create a seamless
+                    experience
+                    for event organizers, ensuring unforgettable events, while fueling success for service providers in
+                    the
+                    dynamic event market. Join us as we transform the way events are organized and executed.
+                    <br>
+                </p>
+            </div><br>
+
+            <div data-aos="zoom-in" class="col-sm-6 p-0 m-0" style="background-color:rgb(255, 255, 255)">
+                <img class="img-fluid" src="vision_new.jpg" style="mix-blend-mode: multiply;" width="100%" height="70%"
+                    alt="Our mission picture">
+            </div>
+
+
+
+
+        </div>
+        <!--Our Services-->
+        <div data-aos="zoom-in" id="services" class="row m-0"
+            style="padding-bottom: 5%;background-color: rgb(4,31,68);width: 100;">
+            <br><br>
+
+            <h1 style="padding:5%;color:rgb(252,203,0);text-align: center">
+                <b>Services </b>
+            </h1>
+            <!--To customers-->
+            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="75" style="background-color: white;">
+                <h2 style="text-align:center;padding:5%;"><b>To Customers</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="customers.jpg" alt="customers_anime" width="50%" height="50%">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>Convenient and customized Event Planning</li>
+                        <li>Extensive Vendor Network</li>
+                        <li>Cost effective events</li>
+                        <li>Real-Time Communication</li>
+                        <li>Exceptional Service</li>
+                        <li>To know more <a href="#contact_us">contact us</a></li>
+                    </ul>
+                </div>
+
+            </div><br><br>
+            <!--To service providers-->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100" style="background-color:rgb(230,237,253) ;">
+                <h2 style="text-align:center;padding:5%;"><b>To Service Providers</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="service_providers.jpg" alt="service_providers_anime" width="50%"
+                        height="50%" style="mix-blend-mode:multiply;">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>Increased Business Opportunities</li>
+                        <li>Seamless Booking and Scheduling</li>
+                        <li>Enhanced Visibility and Branding</li>
+                        <li>Transparent Feedback and Reviews</li>
+                        <li>Reliable Support and Assistance</li>
+                        <li>To know more <a href="#contact_us">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Co_founders-->
+
+        <div id="team" class="container-sm-fullwidth justify-content-center text-center" style="width:100%;margin: 0;"
+            data-aos="slide-right" data-aos-delay="70">
+            <h1 style="padding: 5%;padding-bottom:2%;text-align: center;"><b>Team</b></h1>
+            <div class="row p-1 m-1">
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6 " style="border-radius: 25px;">
+                    <!-- Content for Tousif -->
+                    <div data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="tousif.jpeg" class="card-img-top" alt="Tousif" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>Tousif Ahamed Mohammed </b></h3>
+                            <h5 id="card_details" class="card-title"><b>Managing Director & C.E.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6" style="border-radius: 25px;">
+                    <!-- Content for Venu -->
+                    <div data-aos="flip-right" data-aos-delay="120" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="Venu.jpg" class="card-img-top" alt="Venu" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>Venu Gopal Achhe</b> </h3>
+                            <h5 id="card_details" class="card-title"><b>Technical Director & C.T.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Sravani -->
+                    <div data-aos="flip-right" data-aos-delay="140" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="sravani.jpg" class="card-img-top" alt="Sravani"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>Sravani Kristhipati </b></h3>
+                            <h5 id="card_details" class="card-title"><b>Marketing Director & C.M.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Phani -->
+                    <div data-aos="flip-right" data-aos-delay="160" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="phani.jpeg" class="card-img-top" alt="Phani" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>Phani Kumar Sesham</b></h3>
+                            <h5 id="card_details" class="card-title"><b>Operations Director & C.O.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Contact us-->
+        <div data-aos="fade-up" data-aos-delay="20" id="contact_us" class="container-sm-fullwidth"
+            style="text-align: center; width: 100; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
+            <h1 style=" padding:5%"><b>Contact us</b></h1>
+            <div data-aos="flip-left" data-aos-delay="100" class="col-12"
+                style="background-color:rgb(230,237,253);border-radius:25px;padding-top: 5%;padding-bottom: 5%;padding-left: 10%;padding-right: 10%;">
+                <form id="my_form" style="text-align: left;"
+                    action="https://api.sheetmonkey.io/form/xnVAcKc8K9V5XCmkuzJWpv" method="post"
+                    onsubmit="validateForm(event)" style="position: relative; left:5%;right:3%">
+                    <label for="Name"><i class="fa fa-user"> :</i></label>
+                    <input class="form" id="Name" name="Name" type="text" placeholder="Your full name"
+                        required /><br><br>
+                    <label for="Occupation"><i class="fa-solid fa-user-tie"> :</i></label>
+                    <input class="form" id="Occupation" name="Occupation" type="text" placeholder="Your occupation"
+                        required /><br><br>
+
+                    <label for="Email"><i class="fa fa-envelope"> :</i>
+                    </label>
+                    <input id="Email" name="Email" class="form" type="email" placeholder="Example@domain.com"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
+                        required><br><br>
+
+                    <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
+                    <select id="Category" name="Category" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">Please select your enquiry type
+                        </option>
+                        <option class="op" value="Sponsor/Investor">Sponsor/Investor </option>
+                        <option class="op" value="Service provider">Service provider (like venue place owner, caterer,
+                            and
+                            photographer etc) </option>
+                        <option class="op" value="Customer">Customer </option>
+                        <option class="op" value="Job">Job </option>
+                        <option class="op" value="Other">Other</option>
+                    </select><br><br>
+                    <textarea id="Subject" name="Subject" class="form" rows="4" maxlength="100"
+                        placeholder="Please elaborate the reason for enquiry in 100 words " required></textarea><br>
+                    <span id="wordCount">0/100 words</span>
+                    <br><br>
+                    <p class="fs-5">By clicking on the " Send " button, you accept our terms and conditions.</p><br>
+                    <button id="btn" type="submit" class="btn btn-success" style="border-radius:25px ; color:white ">
+                        Send <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
+                    <button id="btn" type="reset" class="btn btn-danger" style="border-radius:25px ;color:white">
+                        Reset <i class="fas fa-undo btn-fu" style="color:white"></i></button>
+
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="vacancy_modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true" style="border-radius:45px">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel" style="color:rgb(78, 192, 78)">
+                                    Success!!!
+                                </h3>
+
+                            </div>
+                            <div class="modal-body" style="background-color: rgb(16, 16, 52)">
+                                <txt style="font-size: 70%;color:white">Your form has been successfully submitted. Our
+                                    team
+                                    will contact you shortly.
+                                </txt>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="ok" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal end-->
+                <script>
+                    function validateForm(event) {
+                        event.preventDefault(); // Prevent form submission
+
+                        // Get form values
+                        var name = document.getElementById('Name').value;
+                        var occupation = document.getElementById('Occupation').value;
+                        var email = document.getElementById('Email').value;
+                        var category = document.getElementById('Category').value;
+                        var subject = document.getElementById('Subject').value;
+                        // Retrieve more field values as needed
+
+                        // Perform form validation
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                            alert('Please fill out all the required fields.');
+                            return; // Stop further execution
+                        }
+                        else {
+                            alert("Your form has been successfully submitted. Our team will contact you shortly.")
+                        }
+
+                        // Form values passed validation, proceed with form submission
+                        document.getElementById('my_form').submit();
+                    }
+                </script>
+
+                <script>
+                    const textarea = document.getElementById('Subject');
+                    const wordCountElement = document.getElementById('wordCount');
+
+                    textarea.addEventListener('input', function () {
+                        const text = this.value.trim();
+                        const wordCount = text === '' ? 0 : text.split(/\s+/).length;
+                        wordCountElement.textContent = `${wordCount}/100 words`;
+
+                        if (wordCount > 100) {
+                            this.value = text.split(/\s+/).slice(0, 100).join(' ');
+                            wordCountElement.style.color = 'red';
+                        } else {
+                            wordCountElement.style.color = 'black';
+                        }
+                    });
+
+                </script>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--footer-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container-sm-fullwidth " data-aos="zoom-in">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white"
+                style="background-color: rgb(4,31,68); border-top-left-radius: 35px;border-top-right-radius: 35px;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div id="logo_footer_div" class="col-md-3 col-lg-3 col-xl-3 mt-3 pb-3">
+                                <img id="logo_footer" src="aarma_blue_logo.png">
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div id="contact_us_footer" class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>Contact us</b></h3>
+                                <a><img href="https://www.flaticon.com/free-icons/india"
+                                        title="india icons, author:freepik. downloaded from www.flaticon.com"
+                                        src="india.png" width="40px"> <span style="color:rgb(252,203,0)">Nellore,
+                                        Andhra Pradesh - 524001.</span></a><br><br>
+                                <a style="color:rgb(252,203,0)" href="mailto:info.care@aarma.in"><i
+                                        class="fas fa-envelope mr-3"></i> info.care@aarma.in</a><br><br>
+
+                                <a id="btn" type="button" class="btn btn-primary"
+                                    style="border-radius: 25px;background-color: #128C7E;color:white" href="#"
+                                    target="_blank">Chat with us <i style="color:white"
+                                        class="fab fa-whatsapp"></i></a><br><br>
+                                <a id="btn" type="button" class="btn btn-primary" style="border-radius: 25px;" href="#"
+                                    target="_blank">Join us for a virtual meet
+                                    to know more!</a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>Follow us</b></h3>
+
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="LinkedIn" class="fab fa-linkedin-in"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #E4405F"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Instagram" class="fab fa-instagram"></i></a>
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Facebook" class="fab fa-facebook-f"></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #00acee"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Twitter" class="fab fa-twitter"></i></a>
+
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <br><br>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 Copyright:
+                    <a>Aarma Private Limited</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+    </div>
+
+    <!--Telugu-->
+    <div id="telugu" class="container-sm-fullwidth p-0 m-0" data-aos="fade-down">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <!--follow us in the top right corner-->
+            <div class="container-sm-fullwidth p-2"
+                style="display:inline-block;position:absolute;top:0%;right:5%;width:fit-content;height:fit-content">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        తెలుగు
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" onclick="h_lang()">हिंदी</a></li>
+                        <li><a class="dropdown-item" onclick="e_lang()">English</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!--logo-->
+            <div class="container-sm-fullwidth p-3">
+                <span class="navbar-brand p-2"><img class="img-fluid" width="100" height="100" src="aarma_blue_logo.png"
+                        alt="logo">
+
+                </span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+                <ul class="navbar-nav p-2">
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#about_us_t">మా గురించి</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#mission_t">మిషన్</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#services_t">సేవలు</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link" href="#team_t">జట్టు</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link" href="#contact_us_t">మమ్మల్ని సంప్రదించండి</a>
+                    </li>
                 </ul>
             </div>
 
-        </div><br><br>
-        <!--To service providers-->
-        <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100" style="background-color:rgb(230,237,253) ;">
-            <h2 style="text-align:center;padding:5%;"><b>To Service Providers</b></h2>
-            <div class="text-center">
-                <img class="img-fluid" src="service_providers.jpg" alt="service_providers_anime" width="50%"
-                    height="50%" style="mix-blend-mode:multiply;">
-            </div>
-            <div style="text-align:center">
-                <ul class="ul">
-                    <li>Increased Business Opportunities</li>
-                    <li>Seamless Booking and Scheduling</li>
-                    <li>Enhanced Visibility and Branding</li>
-                    <li>Transparent Feedback and Reviews</li>
-                    <li>Reliable Support and Assistance</li>
-                    <li>To know more <a href="#contact_us">contact us</a></li>
-                </ul>
+        </nav>
+
+
+
+
+        <!--About Us-->
+        <div data-aos="flip-up" id="about_us_t" class="row m-0"
+            style="background-color:rgb(230,237,253);padding: 1.5%;padding-bottom: 10%;">
+
+
+            <div class="col-sm-6">
+                <h1>
+                    <b>మా గురించి </b>
+                </h1><br>
+                <p class="p">
+                    ఆర్మా వద్ద, మీ అన్ని ఈవెంట్ అవసరాలకు మేము మీ వన్-స్టాప్ గమ్యస్థానం. మీరు ఆర్గనైజింగ్ చేస్తున్నా
+                    కార్పొరేట్ కాన్ఫరెన్స్, పెళ్లి, గాలా డిన్నర్ లేదా మ్యూజిక్ ఫెస్టివల్, మేము మిమ్మల్ని కవర్ చేసాము.
+                    మనతో
+                    సమగ్ర ప్లాట్‌ఫారమ్, మీరు ఖచ్చితమైన ఈవెంట్‌ను నిర్వహించడానికి అవసరమైన ప్రతిదాన్ని సులభంగా
+                    కనుగొనవచ్చు.
+                    <br>
+                    మా వినియోగదారు-స్నేహపూర్వక యాప్ మరియు వెబ్‌సైట్‌తో, ఈవెంట్ ప్లానింగ్ ఎప్పుడూ సులభం కాదు. అతుకులు
+                    లేకుండా ఆనందించండి
+                    మొత్తం ప్రక్రియలో సమన్వయం, నిజ-సమయ కమ్యూనికేషన్ మరియు తక్షణ నవీకరణలు.
+                    <br>
+                    ఈరోజే మాతో చేరండి మరియు ఈవెంట్ ప్లానింగ్‌లో కొత్త స్థాయి సౌలభ్యం, సామర్థ్యం మరియు శ్రేష్ఠతను
+                    కనుగొనండి.
+                    మీ ఈవెంట్‌ను మరపురానిదిగా చేద్దాం!
+                </p>
+
+            </div><br>
+            <div data-aos="flip-down" class="col-sm-6" style="background-color:rgb(230,237,253);">
+                <img class="img-fluid" style="align-content: center;mix-blend-mode: multiply;" src="about_us_aarma.jpg"
+                    alt="About us picture">
             </div>
         </div>
+
+
+
+        <!--Our Mission-->
+        <div id="mission_t" data-aos="zoom-in" class="row"
+            style="background-color:rgb(255, 255, 255);padding: 1.5%;padding-bottom:5%;width:100">
+            <div class="col-sm-6">
+                <br>
+                <h1>
+                    <b>మిషన్ </b>
+                </h1><br>
+                <p class="p">
+                    ఆర్మా వద్ద, మేము సర్వీస్ ప్రొవైడర్లకు సాధికారత కల్పిస్తూనే ఈవెంట్ ఆర్గనైజింగ్‌ను సులభతరం చేస్తాము.
+                    మా లక్ష్యం
+                    తగ్గించు
+                    ప్రణాళిక ప్రక్రియను క్రమబద్ధీకరించడం, సమగ్ర సాధనాలు మరియు మద్దతు అందించడం ద్వారా కస్టమర్ భారం
+                    పడుతుంది.
+                    అదే సమయంలో, మేము సర్వీస్ ప్రొవైడర్ వ్యాపారాలను కొత్త అవకాశాలతో కనెక్ట్ చేయడం ద్వారా వాటిని పెంచుతాము
+                    మా డిజిటల్ ప్లాట్‌ఫారమ్ ద్వారా వృద్ధి. పరిశ్రమను విప్లవాత్మకంగా మార్చడం ద్వారా, మేము అతుకులు లేకుండా
+                    సృష్టిస్తాము
+                    అనుభవం
+                    ఈవెంట్ ఆర్గనైజర్‌ల కోసం, మరపురాని ఈవెంట్‌లను నిర్ధారిస్తుంది, అదే సమయంలో సర్వీస్ ప్రొవైడర్‌ల
+                    విజయానికి ఆజ్యం పోస్తుంది
+                    ది
+                    డైనమిక్ ఈవెంట్ మార్కెట్. మేము ఈవెంట్‌లను నిర్వహించే మరియు అమలు చేసే విధానాన్ని మార్చేటప్పుడు మాతో
+                    చేరండి.
+                    <br>
+                </p>
+            </div><br>
+
+            <div data-aos="zoom-in" class="col-sm-6 p-0 m-0" style="background-color:rgb(255, 255, 255)">
+                <img class="img-fluid" src="vision_new.jpg" style="mix-blend-mode: multiply;" width="100%" height="70%"
+                    alt="Our mission picture">
+            </div>
+
+
+
+
+        </div>
+        <!--Our Services-->
+        <div data-aos="zoom-in" id="services_t" class="row m-0"
+            style="padding-bottom: 5%;background-color: rgb(4,31,68);width: 100;">
+            <br><br>
+
+            <h1 style="padding:5%;color:rgb(252,203,0);text-align: center">
+                <b>సేవలు </b>
+            </h1>
+            <!--To customers-->
+            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="75" style="background-color: white;">
+                <h2 style="text-align:center;padding:5%;"><b>వినియోగదారులకు</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="customers.jpg" alt="customers_anime" width="50%" height="50%">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>అనుకూలమైన మరియు అనుకూలీకరించిన ఈవెంట్ ప్లానింగ్</li>
+                        <li>విస్తృతమైన విక్రేత నెట్‌వర్క్</li>
+                        <li>కాస్ట్ ఎఫెక్టివ్ ఈవెంట్‌లు</li>
+                        <li>రియల్-టైమ్ కమ్యూనికేషన్</li>
+                        <li>అసాధారణమైన సేవ</li>
+                        <li>మరింత తెలుసుకోవడానికి <a href="#contact_us_t">మమ్మల్ని సంప్రదించండి</a></li>
+                    </ul>
+                </div>
+
+            </div><br><br>
+            <!--To service providers-->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100" style="background-color:rgb(230,237,253) ;">
+                <h2 style="text-align:center;padding:5%;"><b>సర్వీస్ ప్రొవైడర్లకు</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="service_providers.jpg" alt="service_providers_anime" width="50%"
+                        height="50%" style="mix-blend-mode:multiply;">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>పెరిగిన వ్యాపార అవకాశాలు</li>
+                        <li>అతుకులు లేని బుకింగ్ మరియు షెడ్యూలింగ్</li>
+                        <li>మెరుగైన దృశ్యమానత మరియు బ్రాండింగ్</li>
+                        <li>పారదర్శక అభిప్రాయం మరియు సమీక్షలు</li>
+                        <li>విశ్వసనీయమైన మద్దతు మరియు సహాయం</li>
+                        <li>మరింత తెలుసుకోవడానికి <a href="#contact_us_t">మమ్మల్ని సంప్రదించండి</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Co_founders-->
+
+        <div id="team_t" class="container-sm-fullwidth justify-content-center text-center" style="width:100%;margin: 0;"
+            data-aos="slide-right" data-aos-delay="70">
+            <h1 style="padding: 5%;padding-bottom:2%;text-align: center;"><b>జట్టు</b></h1>
+            <div class="row p-1 m-1">
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6 " style="border-radius: 25px;">
+                    <!-- Content for Tousif -->
+                    <div data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="tousif.jpeg" class="card-img-top" alt="Tousif" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>తౌసిఫ్ అహమ్మద్ మహ్మద్</b></h3>
+                            <h5 id="card_details" class="card-title"><b>మేనేజింగ్ డైరెక్టర్ & C.E.O</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6" style="border-radius: 25px;">
+                    <!-- Content for Venu -->
+                    <div data-aos="flip-right" data-aos-delay="120" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="Venu.jpg" class="card-img-top" alt="Venu" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>వేణు గోపాల్ అచ్చే</b> </h3>
+                            <h5 id="card_details" class="card-title"><b>టెక్నికల్ డైరెక్టర్ & C.T.O</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Sravani -->
+                    <div data-aos="flip-right" data-aos-delay="140" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="sravani.jpg" class="card-img-top" alt="Sravani"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>శ్రావణి క్రిష్టిపతి </b></h3>
+                            <h5 id="card_details" class="card-title"><b>మార్కెటింగ్ డైరెక్టర్ & C.M.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Phani -->
+                    <div data-aos="flip-right" data-aos-delay="160" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="phani.jpeg" class="card-img-top" alt="Phani" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>ఫణి కుమార్ శేషం</b></h3>
+                            <h5 id="card_details" class="card-title"><b>ఆపరేషన్స్ డైరెక్టర్ & C.O.O </b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--Contact us-->
+        <div data-aos="fade-up" data-aos-delay="20" id="contact_us_t" class="container-sm-fullwidth"
+            style="text-align: center; width: 100; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
+            <h1 style=" padding:5%"><b>మమ్మల్ని సంప్రదించండి</b></h1>
+            <div data-aos="flip-left" data-aos-delay="100" class="col-12"
+                style="background-color:rgb(230,237,253);border-radius:25px;padding-top: 5%;padding-bottom: 5%;padding-left: 10%;padding-right: 10%;">
+                <form id="my_form_t" style="text-align: left;"
+                    action="https://api.sheetmonkey.io/form/xnVAcKc8K9V5XCmkuzJWpv" method="post"
+                    onsubmit="validateForm(event)" style="position: relative; left:5%;right:3%">
+                    <label for="Name"><i class="fa fa-user"> :</i></label>
+                    <input class="form" id="Name_t" name="Name" type="text" placeholder="మీ పూర్తి పేరు"
+                        required /><br><br>
+                    <label for="Occupation"><i class="fa-solid fa-user-tie"> :</i></label>
+                    <input class="form" id="Occupation_t" name="Occupation" type="text" placeholder="మీ వృత్తి"
+                        required /><br><br>
+
+                    <label for="Email"><i class="fa fa-envelope"> :</i>
+                    </label>
+                    <input id="Email_t" name="Email" class="form" type="email" placeholder="Example@domain.com"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
+                        required><br><br>
+
+                    <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
+                    <select id="Category_t" name="Category" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">దయచేసి మీ విచారణ రకాన్ని ఎంచుకోండి
+                        </option>
+                        <option class="op" value="Sponsor/Investor">స్పాన్సర్/పెట్టుబడిదారు </option>
+                        <option class="op" value="Service provider">సర్వీస్ ప్రొవైడర్ (వేదిక స్థలం యజమాని, క్యాటరర్
+                            వంటివి,
+                            మరియు
+                            ఫోటోగ్రాఫర్ మొదలైనవి)</option>
+                        <option class="op" value="Customer">కస్టమర్ </option>
+                        <option class="op" value="Job">ఉద్యోగం </option>
+                        <option class="op" value="Other">ఇతర</option>
+                    </select><br><br>
+                    <textarea id="Subject_t" name="Subject" class="form" rows="4" maxlength="100"
+                        placeholder="దయచేసి విచారణ కారణాన్ని 100 పదాలలో వివరించండి" required></textarea><br>
+                    <span id="wordCount_t">0/100 పదాలు</span>
+                    <br><br>
+                    <p class="fs-5">"పంపు" బటన్‌పై క్లిక్ చేయడం ద్వారా, మీరు మా నిబంధనలు మరియు షరతులను అంగీకరిస్తారు.
+                    </p><br>
+                    <button id="btn" type="submit" class="btn btn-success" style="border-radius:25px ; color:white ">
+                        పంపండి <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
+                    <button id="btn" type="reset" class="btn btn-danger" style="border-radius:25px ;color:white">
+                        రీసెట్ చేయండి <i class="fas fa-undo btn-fu" style="color:white"></i></button>
+
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="vacancy_modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true" style="border-radius:45px">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel" style="color:rgb(78, 192, 78)">
+                                    Success!!!
+                                </h3>
+
+                            </div>
+                            <div class="modal-body" style="background-color: rgb(16, 16, 52)">
+                                <txt style="font-size: 70%;color:white">Your form has been successfully submitted. Our
+                                    team
+                                    will contact you shortly.
+                                </txt>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="ok" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Modal end-->
+                <script>
+                    function validateForm(event) {
+                        event.preventDefault(); // Prevent form submission
+
+                        // Get form values
+                        var name = document.getElementById('Name_t').value;
+                        var occupation = document.getElementById('Occupation_t').value;
+                        var email = document.getElementById('Email_t').value;
+                        var category = document.getElementById('Category_t').value;
+                        var subject = document.getElementById('Subject_t').value;
+                        // Retrieve more field values as needed
+
+                        // Perform form validation
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                            alert('దయచేసి అవసరమైన అన్ని ఫీల్డ్‌లను పూరించండి.');
+                            return; // Stop further execution
+                        }
+                        else {
+                            alert("మీ ఫారమ్ విజయవంతంగా సమర్పించబడింది. మా బృందం త్వరలో మిమ్మల్ని సంప్రదిస్తుంది.")
+                        }
+
+                        // Form values passed validation, proceed with form submission
+                        document.getElementById('my_form_t').submit();
+                    }
+                </script>
+
+                <script>
+                    const textarea_t = document.getElementById('Subject_t');
+                    const wordCountElement_t = document.getElementById('wordCount_t');
+
+                    textarea_t.addEventListener('input', function () {
+                        const text = this.value.trim();
+                        const wordCount = text === '' ? 0 : text.split(/\s+/).length;
+                        wordCountElement_t.textContent = `${wordCount}/100 పదాలు`;
+
+                        if (wordCount > 100) {
+                            this.value = text.split(/\s+/).slice(0, 100).join(' ');
+                            wordCountElement_t.style.color = 'red';
+                        } else {
+                            wordCountElement_t.style.color = 'black';
+                        }
+                    });
+
+                </script>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--footer-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container-sm-fullwidth " data-aos="zoom-in">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white"
+                style="background-color: rgb(4,31,68); border-top-left-radius: 35px;border-top-right-radius: 35px;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div id="logo_footer_div" class="col-md-3 col-lg-3 col-xl-3 mt-3 pb-3">
+                                <img id="logo_footer" src="aarma_blue_logo.png">
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div id="contact_us_footer" class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>మమ్మల్ని సంప్రదించండి</b></h3>
+                                <a><img href="https://www.flaticon.com/free-icons/india"
+                                        title="india icons, author:freepik. downloaded from www.flaticon.com"
+                                        src="india.png" width="40px"> <span style="color:rgb(252,203,0)">నెల్లూరు,
+                                        ఆంధ్రప్రదేశ్ - 524001.</span></a><br><br>
+                                <a style="color:rgb(252,203,0)" href="mailto:info.care@aarma.in"><i
+                                        class="fas fa-envelope mr-3"></i> info.care@aarma.in</a><br><br>
+
+                                <a id="btn" type="button" class="btn btn-primary"
+                                    style="border-radius: 25px;background-color: #128C7E;color:white" href="#"
+                                    target="_blank">మాతో చాట్ చేయండి <i style="color:white"
+                                        class="fab fa-whatsapp"></i></a><br><br>
+                                <a id="btn" type="button" class="btn btn-primary" style="border-radius: 25px;" href="#"
+                                    target="_blank">వర్చువల్ మీట్ కోసం మాతో చేరండి
+                                    మరింత తెలుసుకోవడానికి!</a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>మమ్మల్ని అనుసరించు</b></h3>
+
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="లింక్డ్ఇన్"
+                                        class="fab fa-linkedin-in"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #E4405F"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="ఇన్స్టాగ్రామ్"
+                                        class="fab fa-instagram"></i></a>
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="ఫేస్బుక్" class="fab fa-facebook-f"></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #00acee"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="ట్విట్టర్" class="fab fa-twitter"></i></a>
+
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <br><br>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 కాపీరైట్:
+                    <a>ఆర్మా ప్రైవేట్ లిమిటెడ్</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- End of .container -->
     </div>
 
-    <!--Co_founders-->
+    <!--Hindi-->
+    <div id="hindi" style="display: none;" class="container-sm-fullwidth p-0 m-0" data-aos="fade-down">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <!--follow us in the top right corner-->
+            <div class="container-sm-fullwidth p-2"
+                style="display:inline-block;position:absolute;top:0%;right:5%;width:fit-content;height:fit-content">
+                <div class="dropdown">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        हिंदी
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" onclick="t_lang()">తెలుగు</a></li>
+                        <li><a class="dropdown-item" onclick="e_lang()">English</a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <div id="co-founders" class="container-sm-fullwidth justify-content-center text-center"
-        style="width:100%;margin: 0;" data-aos="slide-right" data-aos-delay="70">
-        <h1 style="padding: 5%;padding-bottom:2%;text-align: center;"><b>Co-founders</b></h1>
-        <div class="row p-1 m-1">
-            <div id="card" class="col-lg-3 col-md-6 col-sm-6 " style="border-radius: 25px;">
-                <!-- Content for Tousif -->
-                <div data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out" class="card container-sm p-0 "
-                    style="width: 18rem; border-radius: 25px;">
-                    <img src="tousif.jpeg" class="card-img-top" alt="Tousif" height="50%"
-                        style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
-                        <h3 id="card_title" class="card-title"><b>Tousif Ahamed Mohammed </b></h3>
-                        <h5 id="card_details" class="card-title"><b>Managing Director & C.E.O </b></h5>
-                    </div>
+
+            <!--logo-->
+            <div class="container-sm-fullwidth p-3">
+                <span class="navbar-brand p-2"><img class="img-fluid" width="100" height="100" src="aarma_blue_logo.png"
+                        alt="logo">
+
+                </span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2" id="collapsibleNavbar">
+                <ul class="navbar-nav p-2">
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#about_us_h">हमारे बारे में</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#mission_h">उद्देश्य</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link " href="#services_h">सेवाएं</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link" href="#team_h">टीम</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="nav_text" class="nav-link" href="#contact_us_h">संपर्क करें</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+
+        <!--About Us-->
+        <div data-aos="flip-up" id="about_us_h" class="row m-0"
+            style="background-color:rgb(230,237,253);padding: 1.5%;padding-bottom: 10%;">
+
+
+            <div class="col-sm-6">
+                <h1>
+                    <b>हमारे बारे में </b>
+                </h1><br>
+                <p class="p">
+                    अरमा में, हम आपकी सभी इवेंट आवश्यकताओं के लिए वन-स्टॉप डेस्टिनेशन हैं। चाहे आप आयोजन कर रहे हों
+                    कॉर्पोरेट सम्मेलन, शादी, भव्य रात्रिभोज, या संगीत समारोह, हमने आपको कवर किया है। साथ हमारे
+                    व्यापक मंच पर, आप सही कार्यक्रम आयोजित करने के लिए आवश्यक सभी चीजें आसानी से पा सकते हैं।
+                    <br>
+                    हमारे उपयोगकर्ता-अनुकूल ऐप और वेबसाइट के साथ, कार्यक्रम की योजना बनाना कभी इतना आसान नहीं रहा।
+                    निर्बाध आनंद लें
+                    पूरी प्रक्रिया के दौरान समन्वय, वास्तविक समय संचार और त्वरित अपडेट।
+                    <br>
+                    आज ही हमसे जुड़ें और इवेंट प्लानिंग में सुविधा, दक्षता और उत्कृष्टता के एक नए स्तर की खोज करें।
+                    आइए आपके कार्यक्रम को अविस्मरणीय बनाएं!
+                </p>
+
+            </div><br>
+            <div data-aos="flip-down" class="col-sm-6" style="background-color:rgb(230,237,253);">
+                <img class="img-fluid" style="align-content: center;mix-blend-mode: multiply;" src="about_us_aarma.jpg"
+                    alt="About us picture">
+            </div>
+        </div>
+
+
+
+        <!--Our Mission-->
+        <div id="mission_h" data-aos="zoom-in" class="row"
+            style="background-color:rgb(255, 255, 255);padding: 1.5%;padding-bottom:5%;width:100">
+            <div class="col-sm-6">
+                <br>
+                <h1>
+                    <b>उद्देश्य </b>
+                </h1><br>
+                <p class="p">
+                    अरमा में, हम सेवा प्रदाताओं को सशक्त बनाते हुए कार्यक्रम आयोजन को सरल बनाते हैं। हमारा मिशन है
+                    कम
+                    योजना प्रक्रिया को सुव्यवस्थित करके, व्यापक उपकरण और सहायता प्रदान करके ग्राहकों पर बोझ डाला जाता
+                    है।
+                    इसके साथ ही, हम सेवा प्रदाताओं के व्यवसायों को नए अवसरों से जोड़कर उन्हें बढ़ावा देते हैं
+                    हमारे डिजिटल प्लेटफॉर्म के माध्यम से विकास। उद्योग में क्रांति लाकर, हम एक निर्बाध निर्माण करते हैं
+                    अनुभव
+                    कार्यक्रम आयोजकों के लिए, अविस्मरणीय कार्यक्रम सुनिश्चित करना, जबकि सेवा प्रदाताओं के लिए सफलता को
+                    बढ़ावा देना
+
+                    गतिशील घटना बाजार। हमसे जुड़ें क्योंकि हम आयोजनों के आयोजन और क्रियान्वयन के तरीके को बदल रहे हैं।
+                    <br>
+                </p>
+            </div><br>
+
+            <div data-aos="zoom-in" class="col-sm-6 p-0 m-0" style="background-color:rgb(255, 255, 255)">
+                <img class="img-fluid" src="vision_new.jpg" style="mix-blend-mode: multiply;" width="100%" height="70%"
+                    alt="Our mission picture">
+            </div>
+
+
+
+
+        </div>
+        <!--Our Services-->
+        <div data-aos="zoom-in" id="services_h" class="row m-0"
+            style="padding-bottom: 5%;background-color: rgb(4,31,68);width: 100;">
+            <br><br>
+
+            <h1 style="padding:5%;color:rgb(252,203,0);text-align: center">
+                <b>सेवाएं </b>
+            </h1>
+            <!--To customers-->
+            <div class="col-sm-6" data-aos="fade-right" data-aos-delay="75" style="background-color: white;">
+                <h2 style="text-align:center;padding:5%;"><b>ग्राहकों के लिए</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="customers.jpg" alt="customers_anime" width="50%" height="50%">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>सुविधाजनक और अनुकूलित इवेंट प्लानिंग</li>
+                        <li>व्यापक विक्रेता नेटवर्क</li>
+                        <li>लागत प्रभावी घटनाएँ</li>
+                        <li>वास्तविक समय संचार</li>
+                        <li>असाधारण सेवा</li>
+                        <li>अधिक जानने के लिए <a href="#contact_us_h">हमसे संपर्क करें</a></li>
+                    </ul>
+                </div>
+
+            </div><br><br>
+            <!--To service providers-->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100" style="background-color:rgb(230,237,253) ;">
+                <h2 style="text-align:center;padding:5%;"><b>सेवा प्रदाताओं के लिए</b></h2>
+                <div class="text-center">
+                    <img class="img-fluid" src="service_providers.jpg" alt="service_providers_anime" width="50%"
+                        height="50%" style="mix-blend-mode:multiply;">
+                </div>
+                <div style="text-align:center">
+                    <ul class="ul">
+                        <li>व्यावसायिक अवसर बढ़े</li>
+                        <li>निर्बाध बुकिंग और शेड्यूलिंग</li>
+                        <li>बढ़ी हुई दृश्यता और ब्रांडिंग</li>
+                        <li>पारदर्शी प्रतिक्रिया और समीक्षाएँ</li>
+                        <li>विश्वसनीय समर्थन और सहायता</li>
+                        <li>अधिक जानने के लिए <a href="#contact_us_h">हमसे संपर्क करें</a></li>
+                    </ul>
                 </div>
             </div>
-            <div id="card" class="col-lg-3 col-md-6 col-sm-6" style="border-radius: 25px;">
-                <!-- Content for Venu -->
-                <div data-aos="flip-right" data-aos-delay="120" data-aos-easing="ease-in-out" class="card container-sm p-0 "
-                    style="width: 18rem; border-radius: 25px;">
-                    <img src="Venu.jpg" class="card-img-top" alt="Venu" height="50%"
-                        style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
-                        <h3 id="card_title" class="card-title"><b>Venu Gopal Achhe</b> </h3>
-                        <h5 id="card_details" class="card-title"><b>Technical Director & C.T.O </b></h5>
+        </div>
+
+        <!--Co_founders-->
+
+        <div id="team_h" class="container-sm-fullwidth justify-content-center text-center" style="width:100%;margin: 0;"
+            data-aos="slide-right" data-aos-delay="70">
+            <h1 style="padding: 5%;padding-bottom:2%;text-align: center;"><b>टीम</b></h1>
+            <div class="row p-1 m-1">
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6 " style="border-radius: 25px;">
+                    <!-- Content for Tousif -->
+                    <div data-aos="flip-right" data-aos-delay="100" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="tousif.jpeg" class="card-img-top" alt="Tousif" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>तौसीफ अहमद मोहम्मद </b></h3>
+                            <h5 id="card_details" class="card-title"><b>प्रबंध निदेशक एवं सी.ई.ओ </b></h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
-                <!-- Content for Sravani -->
-                <div data-aos="flip-right" data-aos-delay="140" data-aos-easing="ease-in-out" class="card container-sm p-0 "
-                    style="width: 18rem; border-radius: 25px;">
-                    <img src="sravani.jpg" class="card-img-top" alt="Sravani"
-                        style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
-                        <h3 id="card_title" class="card-title"><b>Sravani Kristhipati </b></h3>
-                        <h5 id="card_details" class="card-title"><b>Marketing Director & C.M.O </b></h5>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-6" style="border-radius: 25px;">
+                    <!-- Content for Venu -->
+                    <div data-aos="flip-right" data-aos-delay="120" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="Venu.jpg" class="card-img-top" alt="Venu" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>वेणु गोपाल आछे</b> </h3>
+                            <h5 id="card_details" class="card-title"><b>तकनीकी निदेशक एवं सी.टी.ओ </b></h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
-                <!-- Content for Phani -->
-                <div data-aos="flip-right" data-aos-delay="160" data-aos-easing="ease-in-out" class="card container-sm p-0 "
-                    style="width: 18rem; border-radius: 25px;">
-                    <img src="phani.jpeg" class="card-img-top" alt="Phani" height="50%"
-                        style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
-                    <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
-                        <h3 id="card_title" class="card-title"><b>Phani Kumar Sesham</b></h3>
-                        <h5 id="card_details" class="card-title"><b>Operations Director & C.O.O </b></h5>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Sravani -->
+                    <div data-aos="flip-right" data-aos-delay="140" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="sravani.jpg" class="card-img-top" alt="Sravani"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>श्रावणी कृतिपति </b></h3>
+                            <h5 id="card_details" class="card-title"><b>विपणन निदेशक एवं सी.एम.ओ </b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-sm-12" style="border-radius: 25px;">
+                    <!-- Content for Phani -->
+                    <div data-aos="flip-right" data-aos-delay="160" data-aos-easing="ease-in-out"
+                        class="card container-sm p-0 " style="width: 18rem; border-radius: 25px;">
+                        <img src="phani.jpeg" class="card-img-top" alt="Phani" height="50%"
+                            style="mix-blend-mode: multiply;border-top-left-radius: 25px;border-top-right-radius: 25px;">
+                        <div class="card-body" style="background-color:rgb(4,31,68);text-align: center;">
+                            <h3 id="card_title" class="card-title"><b>फणी कुमार शेषम</b></h3>
+                            <h5 id="card_details" class="card-title"><b>परिचालन निदेशक एवं सी.ओ.ओ </b></h5>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+        <!--Contact us-->
+        <div data-aos="fade-up" data-aos-delay="20" id="contact_us_h" class="container-sm-fullwidth"
+            style="text-align: center; width: 100; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
+            <h1 style=" padding:5%"><b>Contact us</b></h1>
+            <div data-aos="flip-left" data-aos-delay="100" class="col-12"
+                style="background-color:rgb(230,237,253);border-radius:25px;padding-top: 5%;padding-bottom: 5%;padding-left: 10%;padding-right: 10%;">
+                <form id="my_form_h" style="text-align: left;"
+                    action="https://api.sheetmonkey.io/form/xnVAcKc8K9V5XCmkuzJWpv" method="post"
+                    onsubmit="validateForm(event)" style="position: relative; left:5%;right:3%">
+                    <label for="Name"><i class="fa fa-user"> :</i></label>
+                    <input class="form" id="Name_h" name="Name" type="text" placeholder="आपका पूरा नाम"
+                        required /><br><br>
+                    <label for="Occupation"><i class="fa-solid fa-user-tie"> :</i></label>
+                    <input class="form" id="Occupation_h" name="Occupation" type="text" placeholder="आपका व्यवसाय"
+                        required /><br><br>
+
+                    <label for="Email"><i class="fa fa-envelope"> :</i>
+                    </label>
+                    <input id="Email_h" name="Email" class="form" type="email" placeholder="Example@domain.com"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @"
+                        required><br><br>
+
+                    <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
+                    <select id="Category_h" name="Category" class="form">
+                        <option class="op" value="" style="color:rgb(85, 85, 85)">कृपया अपनी पूछताछ का प्रकार चुनें
+                        </option>
+                        <option class="op" value="Sponsor/Investor">प्रायोजक/निवेशक </option>
+                        <option class="op" value="Service provider">सेवा प्रदाता (जैसे आयोजन स्थल का मालिक, कैटरर,
+                            और
+                            फ़ोटोग्राफ़र आदि) </option>
+                        <option class="op" value="Customer">ग्राहक </option>
+                        <option class="op" value="Job">काम </option>
+                        <option class="op" value="Other">अन्य</option>
+                    </select><br><br>
+                    <textarea id="Subject_h" name="Subject" class="form" rows="4" maxlength="100"
+                        placeholder="कृपया पूछताछ का कारण 100 शब्दों में स्पष्ट करें " required></textarea><br>
+                    <span id="wordCount_h">0/100 शब्द</span>
+                    <br><br>
+                    <p class="fs-5">"भेजें" बटन पर क्लिक करके, आप हमारे नियम और शर्तें स्वीकार करते हैं।</p><br>
+                    <button id="btn" type="submit" class="btn btn-success" style="border-radius:25px ; color:white ">
+                        भेजना <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
+                    <button id="btn" type="reset" class="btn btn-danger" style="border-radius:25px ;color:white">
+                        रीसेट <i class="fas fa-undo btn-fu" style="color:white"></i></button>
+
+                </form>
+                
+                <script>
+                    function validateForm(event) {
+                        event.preventDefault(); // Prevent form submission
+
+                        // Get form values
+                        var name = document.getElementById('Name_h').value;
+                        var occupation = document.getElementById('Occupation_h').value;
+                        var email = document.getElementById('Email_h').value;
+                        var category = document.getElementById('Category_h').value;
+                        var subject = document.getElementById('Subject_h').value;
+                        // Retrieve more field values as needed
+
+                        // Perform form validation
+                        if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
+                            alert('कृपया सभी आवश्यक फ़ील्ड भरें.');
+                            return; // Stop further execution
+                        }
+                        else {
+                            alert("आपका फॉर्म सफलतापूर्वक सबमिट हो गया है. हमारी टीम शीघ्र ही आपसे संपर्क करेगी.")
+                        }
+
+                        // Form values passed validation, proceed with form submission
+                        document.getElementById('my_form_h').submit();
+                    }
+                </script>
+
+                <script>
+                    const textarea_h = document.getElementById('Subject_h');
+                    const wordCountElement_h = document.getElementById('wordCount_h');
+
+                    textarea_h.addEventListener('input', function () {
+                        const text = this.value.trim();
+                        const wordCount = text === '' ? 0 : text.split(/\s+/).length;
+                        wordCountElement_h.textContent = `${wordCount}/100 शब्द`;
+
+                        if (wordCount > 100) {
+                            this.value = text.split(/\s+/).slice(0, 100).join(' ');
+                            wordCountElement_h.style.color = 'red';
+                        } else {
+                            wordCountElement_h.style.color = 'black';
+                        }
+                    });
+
+                </script>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--footer-->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container-sm-fullwidth " data-aos="zoom-in">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white"
+                style="background-color: rgb(4,31,68); border-top-left-radius: 35px;border-top-right-radius: 35px;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div id="logo_footer_div" class="col-md-3 col-lg-3 col-xl-3 mt-3 pb-3">
+                                <img id="logo_footer" src="aarma_blue_logo.png">
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div id="contact_us_footer" class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>संपर्क करें</b></h3>
+                                <a><img href="https://www.flaticon.com/free-icons/india"
+                                        title="india icons, author:freepik. downloaded from www.flaticon.com"
+                                        src="india.png" width="40px"> <span style="color:rgb(252,203,0)">नेल्लोर,
+                                            आंध्र प्रदेश - 524001.</span></a><br><br>
+                                <a style="color:rgb(252,203,0)" href="mailto:info.care@aarma.in"><i
+                                        class="fas fa-envelope mr-3"></i> info.care@aarma.in</a><br><br>
+
+                                <a id="btn" type="button" class="btn btn-primary"
+                                    style="border-radius: 25px;background-color: #128C7E;color:white" href="#"
+                                    target="_blank">हमारे साथ चैट करें <i style="color:white"
+                                        class="fab fa-whatsapp"></i></a><br><br>
+                                <a id="btn" type="button" class="btn btn-primary" style="border-radius: 25px;" href="#"
+                                    target="_blank">वर्चुअल मीटिंग के लिए हमसे जुड़ें
+                                    अधिक जानने के लिए!</a>
+
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h3 class="text-uppercase mb-4 font-weight-bold"><b>हमारे पर का पालन करें</b></h3>
+
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="LinkedIn" class="fab fa-linkedin-in"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #E4405F"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Instagram" class="fab fa-instagram"></i></a>
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Facebook" class="fab fa-facebook-f"></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #00acee"
+                                    target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom" title="Twitter" class="fab fa-twitter"></i></a>
+
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <br><br>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 कॉपीराइट:
+                    <a>अरमा प्राइवेट लिमिटेड</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- End of .container -->
     </div>
 
     <!--scroll to top button-->
 
-    <div class="container-sm-fullwidth" style="width: 100;margin: 0;"><button id="scroll-to-top"
-            onclick="scrollToTop()"><i class="fas fa-arrow-up" style="color:black" aria-hidden="true"></i></button><br>
+    <div class="container-sm-fullwidth" style="width: 100;margin: 0;background-color:rgb(3,25,54) ;"><button
+            id="scroll-to-top" onclick="scrollToTop()"><i class="fas fa-arrow-up" style="color:black"
+                aria-hidden="true"></i></button><br>
     </div>
 
     <script>
@@ -264,217 +1373,28 @@
         }
     </script>
 
+<script type="text/javascript">
+    function e_lang() {
+        document.getElementById("title").innerHTML = unescape("Home Page");
+        document.getElementById("english").style.display = "block";
+        document.getElementById("hindi").style.display = "none";
+        document.getElementById("telugu").style.display = "none";
+    }
 
-    <!--Contact us-->
-    <div data-aos="fade-up" data-aos-delay="20" id="contact_us" class="container-sm-fullwidth"
-        style="text-align: center; width: 100; background-color: rgb(255, 255, 255);padding:5%;margin: 0;">
-        <h1 style=" padding:5%"><b>Contact us</b></h1>
-        <div data-aos="flip-left" data-aos-delay="100" class="col-12"
-            style="background-color:rgb(230,237,253);border-radius:25px;padding-top: 5%;padding-bottom: 5%;padding-left: 10%;padding-right: 10%;">
-            <form id="my_form" style="text-align: left;" action="https://api.sheetmonkey.io/form/xnVAcKc8K9V5XCmkuzJWpv"
-                method="post" onsubmit="validateForm(event)" style="position: relative; left:5%;right:3%">
-                <label for="Name"><i class="fa fa-user"> :</i></label>
-                <input class="form" id="Name" name="Name" type="text" placeholder="Your full name" required /><br><br>
-                <label for="Occupation"><i class="fa-solid fa-user-tie"> :</i></label>
-                <input class="form" id="Occupation" name="Occupation" type="text" placeholder="Your occupation"
-                    required /><br><br>
+    function h_lang() {
+        document.getElementById("title").innerHTML = unescape("होम पेज");
+        document.getElementById("english").style.display = "none";
+        document.getElementById("hindi").style.display = "block";
+        document.getElementById("telugu").style.display = "none";
+    }
 
-                <label for="Email"><i class="fa fa-envelope"> :</i>
-                </label>
-                <input id="Email" name="Email" class="form" type="email" placeholder="Example@domain.com"
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="must include @" required><br><br>
-
-                <label for="Category"><i class="fa-solid fa-clipboard-question"> :</i></label>
-                <select id="Category" name="Category" class="form">
-                    <option class="op" value="" style="color:rgb(85, 85, 85)">Please select your enquiry type</option>
-                    <option class="op" value="Sponsor/Investor">Sponsor/Investor </option>
-                    <option class="op" value="Service provider">Service provider (like venue place owner, caterer, and
-                        photographer etc) </option>
-                    <option class="op" value="Customer">Customer </option>
-                    <option class="op" value="Job">Job </option>
-                    <option class="op" value="Other">Other</option>
-                </select><br><br>
-                <textarea id="Subject" name="Subject" class="form" rows="4" maxlength="100"
-                    placeholder="Please elaborate the reason for enquiry in 100 words " required></textarea><br>
-                <span id="wordCount">0/100 words</span>
-                <br><br>
-                <p class="fs-5">By clicking on the " Send " button, you accept our terms and conditions.</p><br>
-                <button id="btn" type="submit" class="btn btn-success" style="border-radius:25px ; color:white ">
-                    Send <i class="fas fa-paper-plane btn-fu" style="color:white"></i></button>
-                <button id="btn" type="reset" class="btn btn-danger" style="border-radius:25px ;color:white">
-                    Reset <i class="fas fa-undo btn-fu" style="color:white"></i></button>
-
-            </form>
-            <!-- Modal -->
-            <div class="modal fade" id="vacancy_modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true" style="border-radius:45px">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="exampleModalLabel" style="color:rgb(78, 192, 78)">
-                                Success!!!
-                            </h3>
-
-                        </div>
-                        <div class="modal-body" style="background-color: rgb(16, 16, 52)">
-                            <txt style="font-size: 70%;color:white">Your form has been successfully submitted. Our team
-                                will contact you shortly.
-                            </txt>
-                        </div>
-                        <div class="modal-footer">
-                            <button id="ok" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Modal end-->
-            <script>
-                function validateForm(event) {
-                    event.preventDefault(); // Prevent form submission
-
-                    // Get form values
-                    var name = document.getElementById('Name').value;
-                    var occupation = document.getElementById('Occupation').value;
-                    var email = document.getElementById('Email').value;
-                    var category = document.getElementById('Category').value;
-                    var subject = document.getElementById('Subject').value;
-                    // Retrieve more field values as needed
-
-                    // Perform form validation
-                    if (name.trim() === '' || occupation.trim() === '' || email.trim() === '' || category.trim() === '' || subject.trim() === '') {
-                        alert('Please fill out all the required fields.');
-                        return; // Stop further execution
-                    }
-                    else {
-                        alert("Your form has been successfully submitted. Our team will contact you shortly.")
-                    }
-
-                    // Form values passed validation, proceed with form submission
-                    document.getElementById('my_form').submit();
-                }
-            </script>
-
-            <script>
-                const textarea = document.getElementById('Subject');
-                const wordCountElement = document.getElementById('wordCount');
-
-                textarea.addEventListener('input', function () {
-                    const text = this.value.trim();
-                    const wordCount = text === '' ? 0 : text.split(/\s+/).length;
-                    wordCountElement.textContent = `${wordCount}/100 words`;
-
-                    if (wordCount > 100) {
-                        this.value = text.split(/\s+/).slice(0, 100).join(' ');
-                        wordCountElement.style.color = 'red';
-                    } else {
-                        wordCountElement.style.color = 'black';
-                    }
-                });
-
-            </script>
-
-        </div>
-
-    </div>
-
-
-
-
-    <!--footer-->
-    <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class="container-sm-fullwidth " data-aos="zoom-in">
-        <!-- Footer -->
-        <footer class="text-center text-lg-start text-white"
-            style="background-color: rgb(4,31,68); border-top-left-radius: 35px;border-top-right-radius: 35px;">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Links -->
-                <section class="">
-                    <!--Grid row-->
-                    <div class="row">
-                        <!-- Grid column -->
-                        <div id="logo_footer_div" class="col-md-3 col-lg-3 col-xl-3 mt-3 pb-3">
-                            <img id="logo_footer" src="aarma_blue_logo.png">
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-
-                        <!-- Grid column -->
-
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none" />
-
-                        <!-- Grid column -->
-                        <div id="contact_us_footer" class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-                            <h3 class="text-uppercase mb-4 font-weight-bold"><b>Contact us</b></h3>
-                            <a><img href="https://www.flaticon.com/free-icons/india"
-                                    title="india icons, author:freepik. downloaded from www.flaticon.com"
-                                    src="india.png" width="40px"> <span style="color:rgb(252,203,0)">Nellore,
-                                    Andhra Pradesh - 524001.</span></a><br><br>
-                            <a style="color:rgb(252,203,0)" href="mailto:info.care@aarma.in"><i
-                                    class="fas fa-envelope mr-3"></i> info.care@aarma.in</a><br><br>
-
-                            <a id="btn" type="button" class="btn btn-primary"
-                                style="border-radius: 25px;background-color: #128C7E;color:white" href="#"
-                                target="_blank">Chat with us <i style="color:white"
-                                    class="fab fa-whatsapp"></i></a><br><br>
-                            <a id="btn" type="button" class="btn btn-primary" style="border-radius: 25px;" href="#"
-                                target="_blank">Join us for a virtual meet
-                                to know more!</a>
-
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h3 class="text-uppercase mb-4 font-weight-bold"><b>Follow us</b></h3>
-
-
-                            <!-- Linkedin -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #0077b5"
-                                target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="LinkedIn" class="fab fa-linkedin-in"></i></a>
-                            <!-- Instagram -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #E4405F"
-                                target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Instagram" class="fab fa-instagram"></i></a>
-                            <!-- Facebook -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
-                                target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Facebook" class="fab fa-facebook-f"></i></a>
-
-                            <!-- Twitter -->
-                            <a class="btn btn-primary btn-floating m-1" style="background-color: #00acee"
-                                target="_blank" href="#" role="button"><i data-bs-toggle="tooltip"
-                                    data-bs-placement="bottom" title="Twitter" class="fab fa-twitter"></i></a>
-
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                </section>
-                <!-- Section: Links -->
-            </div>
-            <!-- Grid container -->
-
-            <!-- Copyright -->
-            <br><br>
-
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2023 Copyright:
-                <a>Aarma Pvt Ltd</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </div>
-    <!-- End of .container -->
+    function t_lang() {
+        document.getElementById("title").innerHTML = unescape("హోమ్ పేజీ");
+        document.getElementById("english").style.display = "none";
+        document.getElementById("hindi").style.display = "none";
+        document.getElementById("telugu").style.display = "block";
+    }
+</script>
 
 
 
@@ -491,3 +1411,5 @@
 
 
 </body>
+
+</html>
